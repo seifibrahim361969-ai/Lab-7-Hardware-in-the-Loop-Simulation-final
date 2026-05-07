@@ -1,15 +1,3 @@
-"""Webots controller for HIL shortest-path navigation using P1-P27 graph.
-
-This version:
-1. Computes shortest path before movement.
-2. Prints the shortest path before movement.
-3. Moves using ESP32 line-following states.
-4. Uses shortest path to force turns at planned nodes.
-5. Prints every crossed node.
-6. Stops immediately when the crossed node is the goal.
-7. Snaps the robot exactly to the goal node.
-"""
-
 from controller import Supervisor
 import serial
 from serial import SerialException
